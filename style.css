@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.image {
+    width: 100%;
+    height: auto;
+}
+.heading {
+    display: flex;
+    padding: 4rem;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.container1 {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    width: 100%;
+}
+.icons {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-content: space-around;
+}
+.icon-container {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-container:hover {
+    border-color: var(--Soft-Magenta);
+}
+.icon {
+    font-size: 24px;
+    color: white;
+}
+.icon:hover {
+    color: var(--Soft-Magenta);
+}
+h1 {
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p {
+    line-height: 2rem;
+}
+button {
+    padding: 1rem;
+    border-radius: 20px;
+    width: 12rem;
+    color: var(--Violet);
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+@media  screen and (max-width:375px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
+    .heading {
+        padding: 2rem 0 0 0;
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container1 {
+        width: 100%;
+    }
+    .container2 {
+        text-align: center;
+    }
+    .icon-container {
+        width: 2rem;
+        height: 2rem;
+    }
+    .icons {
+        align-content: space-between;
+        justify-content: center;
+    }
+    h1 {
+        font-weight: 400;
+    }
+}
